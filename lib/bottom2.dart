@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:soccer/livescore.dart';
+import 'package:soccer/news.dart';
 
 class bottom2 extends StatefulWidget {
   const bottom2({Key? key}) : super(key: key);
@@ -73,10 +75,14 @@ class _bottom2State extends State<bottom2> {
                       SizedBox(
                         width: 28.w,
                       ),
-                      Image.asset(
-                        "asset/Frame 15.png",
-                        width: 98.w,
-                        height: 46.h,
+                      GestureDetector(onTap: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (_)=>livescore()));
+                      },
+                        child: Image.asset(
+                          "asset/Frame 15.png",
+                          width: 98.w,
+                          height: 46.h,
+                        ),
                       ),
                       SizedBox(
                         width: 16.w,
@@ -283,10 +289,14 @@ class _bottom2State extends State<bottom2> {
                       children: [SizedBox(width: 28.w,),
                         Row(
                           children: [
-                            Image.asset(
-                              "asset/articel23.png",
-                              width: 249.w,
-                              height: 169.h,
+                            GestureDetector(onTap: (){
+                              Navigator.of(context).push(MaterialPageRoute(builder: (_)=>news()));
+                            },
+                              child: Image.asset(
+                                "asset/articel23.png",
+                                width: 249.w,
+                                height: 169.h,
+                              ),
                             ),SizedBox(width: 14.w,),Image.asset(
                               "asset/articel23.png",
                               width: 249.w,
