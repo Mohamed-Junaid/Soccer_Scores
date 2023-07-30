@@ -108,56 +108,58 @@ class _screen3State extends State<screen3> {
                 ),
               ],
             ),
-          ),SizedBox(height: 290.h,
-            child: ListView(
-              children: [
-                SizedBox(height: 24.h,),
-                Padding(
-                  padding: EdgeInsets.only(left: 28.w,right: 28.w),
-                  child: GestureDetector(onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_)=>uefa()));
-                  },
+          ),Expanded(
+            child: SizedBox(height: 293.5.h,
+              child: ListView(
+                children: [
+                  SizedBox(height: 24.h,),
+                  Padding(
+                    padding: EdgeInsets.only(left: 28.w,right: 28.w),
+                    child: GestureDetector(onTap: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (_)=>uefa()));
+                    },
+                      child: Image.asset(
+                        "asset/12.png",
+                        width: 318.w,
+                        height: 35.h,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 14.h,),
+                  Padding(
+                    padding: EdgeInsets.only(left: 28.w,right: 28.w),
                     child: Image.asset(
-                      "asset/12.png",
+                      "asset/match1.png",
+                      width: 319.w,
+                      height: 68.h,
+                    ),
+                  ),SizedBox(height: 24.h,),
+                  Padding(
+                    padding:EdgeInsets.only(left: 28.w,right: 28.w),
+                    child: Image.asset(
+                      "asset/13.png",
                       width: 318.w,
                       height: 35.h,
                     ),
-                  ),
-                ),
-                SizedBox(height: 14.h,),
-                Padding(
-                  padding: EdgeInsets.only(left: 28.w,right: 28.w),
-                  child: Image.asset(
-                    "asset/match1.png",
-                    width: 319.w,
-                    height: 68.h,
-                  ),
-                ),SizedBox(height: 24.h,),
-                Padding(
-                  padding:EdgeInsets.only(left: 28.w,right: 28.w),
-                  child: Image.asset(
-                    "asset/13.png",
-                    width: 318.w,
-                    height: 35.h,
-                  ),
-                ), SizedBox(height: 14.h,),
-                Padding(
-                  padding: EdgeInsets.only(left: 28.w,right: 28.w),
-                  child: Image.asset(
-                    "asset/match12.png",
-                    width: 319.w,
-                    height: 68.h,
-                  ),
-                ), SizedBox(height: 14.h,),
-                Padding(
-                  padding: EdgeInsets.only(left: 28.w,right: 28.w),
-                  child: Image.asset(
-                    "asset/match12.png",
-                    width: 319.w,
-                    height: 68.h,
-                  ),
-                )
-              ],
+                  ), SizedBox(height: 14.h,),
+                  Padding(
+                    padding: EdgeInsets.only(left: 28.w,right: 28.w),
+                    child: Image.asset(
+                      "asset/match12.png",
+                      width: 319.w,
+                      height: 68.h,
+                    ),
+                  ), SizedBox(height: 14.h,),
+                  Padding(
+                    padding: EdgeInsets.only(left: 28.w,right: 28.w),
+                    child: Image.asset(
+                      "asset/match12.png",
+                      width: 319.w,
+                      height: 68.h,
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
 

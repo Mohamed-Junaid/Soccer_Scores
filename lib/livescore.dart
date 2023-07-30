@@ -15,47 +15,67 @@ class _livescoreState extends State<livescore> {
         leadingWidth: 14.w,
         backgroundColor: Color(0xff181829),
         elevation: 0,
-        centerTitle: true,
-        title: Container(
-          width: 319.w,
-          height: 54.h,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
-              color: Color(0xff222232)),
-          child: Row(
-            children: [
-              SizedBox(
-                width: 15.w,
-              ),
-              Image.asset(
-                "asset/Search.png",
-                width: 15.w,
-                height: 15.h,
-                color: Color(0xff65656B),
-              ),
-              SizedBox(
-                width: 8.w,
-              ),
-              SizedBox(
-                width: 200.w,
-                child: TextFormField(
-                    decoration: InputDecoration(
-                      hintText: "Search for news, team, match, etc...",
-                      hintStyle: TextStyle(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xff65656B)),
-                      focusedBorder: InputBorder.none,
-                      enabledBorder: InputBorder.none,
-                    ),
-                    style: TextStyle(
-                      fontSize: 14.sp,
-                      fontWeight: FontWeight.w500,
-                    )),
-              ),
-            ],
+        centerTitle: true,toolbarHeight: 70.h,
+        title: Padding(
+          padding:EdgeInsets.only(top: 10.h),
+          child: Container(
+            width: 256.w,
+            height: 54.h,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                color: Color(0xff222232)),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 15.w,
+                ),
+                Image.asset(
+                  "asset/Search.png",
+                  width: 15.w,
+                  height: 15.h,
+                  color: Color(0xff65656B),
+                ),
+                SizedBox(
+                  width: 8.w,
+                ),
+                SizedBox(
+                  width: 200.w,
+                  child: TextFormField(
+                      decoration: InputDecoration(
+                        hintText: "Search your team ...",
+                        hintStyle: TextStyle(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xff65656B)),
+                        focusedBorder: InputBorder.none,
+                        enabledBorder: InputBorder.none,
+                      ),
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w500,
+                      )),
+                ),
+              ],
+            ),
           ),
-        )),
+        ),
+      actions: [
+        Padding(
+          padding: EdgeInsets.only(right: 28.w,top: 10.h),
+          child: GestureDetector( onTap:  () {
+            Navigator.of(context).pop();
+          },
+            child: Text(
+                "Cancel",
+                style: TextStyle(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white
+                )
+            ),
+          ),
+        )
+      ],),
       body:
           Padding(
           padding: EdgeInsets.only(top: 24.h),
@@ -114,88 +134,90 @@ class _livescoreState extends State<livescore> {
                   ],
                 ),
               ),SizedBox(height: 28.h,),
-              SizedBox(height: 623.h,width: 380.w,
-                child: ListView(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 28.w,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore.png",
-                        width: 319.w,
-                        height: 37.h,
+              Expanded(
+                child: SizedBox(height: 604.h,width: 380.w,
+                  child: ListView(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(left: 28.w,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore12.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore6.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore1.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore2.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore3.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore4.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore13.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore12.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
+                      ),Padding(
+                        padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
+                        child: Image.asset(
+                          "asset/explore6.png",
+                          width: 319.w,
+                          height: 37.h,
+                        ),
                       ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore12.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore6.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore1.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore2.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore3.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore4.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore13.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore12.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),Padding(
-                      padding: EdgeInsets.only(left: 28.w,top: 28.h,right: 28.w),
-                      child: Image.asset(
-                        "asset/explore6.png",
-                        width: 319.w,
-                        height: 37.h,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
