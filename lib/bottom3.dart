@@ -13,7 +13,7 @@ class _bottom3State extends State<bottom3> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff181829), appBar: AppBar(
-        leadingWidth: 14.w,
+        leadingWidth: 25.w,
         backgroundColor: Color(0xff181829),
         elevation: 0,
         centerTitle: true,toolbarHeight: 70.h,

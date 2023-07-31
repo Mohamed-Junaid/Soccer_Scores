@@ -45,10 +45,10 @@ class _homeState extends State<home> {
             Padding(
               padding: EdgeInsets.only(left: 40.w,right: 82.w),
               child: Container(
-                width: 253.w,
+                width: 240.w,
                 height: 60.h,
                 child: Text(
-                    "Search millions of jobs and get the inside scoop on companies.              Wait for what? Let’s get start it!",
+                    "Search millions of jobs and get the inside scoop on companies.                Wait for what? Let’s get start it!",
                     style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w400,
